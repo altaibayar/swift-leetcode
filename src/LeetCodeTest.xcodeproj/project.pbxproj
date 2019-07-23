@@ -17,6 +17,7 @@
 		433FDCAA22DFA13900A49821 /* 226.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDCA922DFA13900A49821 /* 226.swift */; };
 		433FDCAC22DFA26300A49821 /* 437.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDCAB22DFA26300A49821 /* 437.swift */; };
 		433FDCAE22DFA56000A49821 /* 438.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDCAD22DFA56000A49821 /* 438.swift */; };
+		43E9934522E72A8200DC49B6 /* 448.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9934422E72A8200DC49B6 /* 448.swift */; };
 		AD13A6F12040865300D6B40F /* 5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13A6F02040865300D6B40F /* 5.swift */; };
 		AD3D4AF21FDC062F006DD47C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF11FDC062F006DD47C /* main.swift */; };
 		AD3D4AFA1FDC067E006DD47C /* ProblemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF91FDC067E006DD47C /* ProblemProtocol.swift */; };
@@ -136,6 +137,7 @@
 		433FDCA922DFA13900A49821 /* 226.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 226.swift; sourceTree = "<group>"; };
 		433FDCAB22DFA26300A49821 /* 437.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 437.swift; sourceTree = "<group>"; };
 		433FDCAD22DFA56000A49821 /* 438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 438.swift; sourceTree = "<group>"; };
+		43E9934422E72A8200DC49B6 /* 448.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 448.swift; path = "../../../../../../../../../System/Volumes/Data/Users/altai.tseveenbayar/Documents/dev/swift-leetcode/src/LeetCodeTest/Problems/401_500/448.swift"; sourceTree = "<group>"; };
 		AD13A6F02040865300D6B40F /* 5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.swift; sourceTree = "<group>"; };
 		AD3D4AEE1FDC062F006DD47C /* LeetCodeTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3D4AF11FDC062F006DD47C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 				433FDCAB22DFA26300A49821 /* 437.swift */,
 				433FDCAD22DFA56000A49821 /* 438.swift */,
 				ADF12B5A1FE5CD630033D29D /* 442.swift */,
+				43E9934422E72A8200DC49B6 /* 448.swift */,
 				ADF367DB1FDD8F1700CAC10C /* 455.swift */,
 				ADF367D51FDD721200CAC10C /* 496.swift */,
 			);
@@ -563,6 +566,7 @@
 				AD9DB9701FE1850900FF83FB /* 11.swift in Sources */,
 				AD13A6F12040865300D6B40F /* 5.swift in Sources */,
 				433FDCAE22DFA56000A49821 /* 438.swift in Sources */,
+				43E9934522E72A8200DC49B6 /* 448.swift in Sources */,
 				ADF367DE1FDD90B700CAC10C /* 242.swift in Sources */,
 				AD3D4B3F1FDC5482006DD47C /* 236.swift in Sources */,
 				AD3D4B0B1FDC2083006DD47C /* 21.swift in Sources */,
