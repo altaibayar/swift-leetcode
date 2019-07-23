@@ -18,6 +18,9 @@
 		433FDCAC22DFA26300A49821 /* 437.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDCAB22DFA26300A49821 /* 437.swift */; };
 		433FDCAE22DFA56000A49821 /* 438.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDCAD22DFA56000A49821 /* 438.swift */; };
 		43E9934522E72A8200DC49B6 /* 448.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9934422E72A8200DC49B6 /* 448.swift */; };
+		43E9934722E72DCE00DC49B6 /* 538.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9934622E72DCE00DC49B6 /* 538.swift */; };
+		43E9934922E730F100DC49B6 /* 543.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9934822E730F100DC49B6 /* 543.swift */; };
+		43E9934B22E7329800DC49B6 /* 581.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9934A22E7329800DC49B6 /* 581.swift */; };
 		AD13A6F12040865300D6B40F /* 5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13A6F02040865300D6B40F /* 5.swift */; };
 		AD3D4AF21FDC062F006DD47C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF11FDC062F006DD47C /* main.swift */; };
 		AD3D4AFA1FDC067E006DD47C /* ProblemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF91FDC067E006DD47C /* ProblemProtocol.swift */; };
@@ -138,6 +141,9 @@
 		433FDCAB22DFA26300A49821 /* 437.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 437.swift; sourceTree = "<group>"; };
 		433FDCAD22DFA56000A49821 /* 438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 438.swift; sourceTree = "<group>"; };
 		43E9934422E72A8200DC49B6 /* 448.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 448.swift; path = "../../../../../../../../../System/Volumes/Data/Users/altai.tseveenbayar/Documents/dev/swift-leetcode/src/LeetCodeTest/Problems/401_500/448.swift"; sourceTree = "<group>"; };
+		43E9934622E72DCE00DC49B6 /* 538.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 538.swift; path = "../../../../../../../../../System/Volumes/Data/Users/altai.tseveenbayar/Documents/dev/swift-leetcode/src/LeetCodeTest/Problems/501_600/538.swift"; sourceTree = "<group>"; };
+		43E9934822E730F100DC49B6 /* 543.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 543.swift; path = "../../../../../../../../../System/Volumes/Data/Users/altai.tseveenbayar/Documents/dev/swift-leetcode/src/LeetCodeTest/Problems/501_600/543.swift"; sourceTree = "<group>"; };
+		43E9934A22E7329800DC49B6 /* 581.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 581.swift; path = "../../../../../../../../../System/Volumes/Data/Users/altai.tseveenbayar/Documents/dev/swift-leetcode/src/LeetCodeTest/Problems/501_600/581.swift"; sourceTree = "<group>"; };
 		AD13A6F02040865300D6B40F /* 5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.swift; sourceTree = "<group>"; };
 		AD3D4AEE1FDC062F006DD47C /* LeetCodeTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3D4AF11FDC062F006DD47C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -465,7 +471,10 @@
 			isa = PBXGroup;
 			children = (
 				ADF367FE1FDDD12400CAC10C /* 530.swift */,
+				43E9934622E72DCE00DC49B6 /* 538.swift */,
+				43E9934822E730F100DC49B6 /* 543.swift */,
 				AD85FAA421FE87C800129451 /* 575.swift */,
+				43E9934A22E7329800DC49B6 /* 581.swift */,
 			);
 			path = 501_600;
 			sourceTree = "<group>";
@@ -606,6 +615,7 @@
 				AD3D4B351FDC4C9D006DD47C /* 204.swift in Sources */,
 				ADF367E01FDD930200CAC10C /* 231.swift in Sources */,
 				AD3D4B091FDC1E55006DD47C /* 20.swift in Sources */,
+				43E9934722E72DCE00DC49B6 /* 538.swift in Sources */,
 				AD3D4B161FDC2B7B006DD47C /* 27.swift in Sources */,
 				AD9F819821FD5A8B00D150CB /* Kadane.swift in Sources */,
 				AD85FAAB21FE8EE400129451 /* 283.swift in Sources */,
@@ -619,6 +629,7 @@
 				ADC5C6CC21F981FE00ADAD61 /* 155.swift in Sources */,
 				ADCC3AA822150B8800CFFFE1 /* 380.swift in Sources */,
 				AD3D4B411FDC7DB6006DD47C /* 167.swift in Sources */,
+				43E9934922E730F100DC49B6 /* 543.swift in Sources */,
 				AD9F819E21FD6C5900D150CB /* 119.swift in Sources */,
 				ADC482C91FE03FD700A8F934 /* 687.swift in Sources */,
 				AD6AAF261FF90F2200313D88 /* 19.swift in Sources */,
@@ -634,6 +645,7 @@
 				AD3D4B271FDC40E1006DD47C /* 69.swift in Sources */,
 				AD3D4B291FDC4137006DD47C /* 70.swift in Sources */,
 				AD70F0B722DA7CD500654E08 /* 172.swift in Sources */,
+				43E9934B22E7329800DC49B6 /* 581.swift in Sources */,
 				AD3D4B1B1FDC2F1C006DD47C /* 35.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
