@@ -8,6 +8,6 @@
 
 import Foundation
 
-Problem_23().run();
+Problem_22().run();
 
 
