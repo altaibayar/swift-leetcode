@@ -19,16 +19,16 @@ class StackUsingLinkedList<T>{
         }
     }
     
-    private var lastNode: Node?
+    private var rootNode: Node?
     
     func push(node: Node) {
-        node.next = lastNode
-        lastNode = node
+        node.next = rootNode
+        rootNode = node
     }
     
     func pop() -> Node? {
-        let tmp = lastNode
-        lastNode = lastNode?.next
+        let tmp = rootNode
+        rootNode = rootNode?.next
         
         return tmp
     }
