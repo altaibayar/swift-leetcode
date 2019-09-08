@@ -29,6 +29,7 @@
 		AD20929522ECA6A000E3C31F /* 560.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD20929422ECA6A000E3C31F /* 560.swift */; };
 		AD2505A623257C6700CDDBE7 /* 973.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505A523257C6700CDDBE7 /* 973.swift */; };
 		AD2505A823258FD400CDDBE7 /* 238.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505A723258FD400CDDBE7 /* 238.swift */; };
+		AD2505AA232598B400CDDBE7 /* 937.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505A9232598B400CDDBE7 /* 937.swift */; };
 		AD3D4AF21FDC062F006DD47C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF11FDC062F006DD47C /* main.swift */; };
 		AD3D4AFA1FDC067E006DD47C /* ProblemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF91FDC067E006DD47C /* ProblemProtocol.swift */; };
 		AD3D4AFF1FDC06B4006DD47C /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AFE1FDC06B4006DD47C /* 1.swift */; };
@@ -170,6 +171,7 @@
 		AD20929422ECA6A000E3C31F /* 560.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 560.swift; path = "../../../../../../../../../System/Volumes/Data/Users/altai/Documents/dev/swift-leetcode/src/LeetCodeTest/Problems/501_600/560.swift"; sourceTree = "<group>"; };
 		AD2505A523257C6700CDDBE7 /* 973.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 973.swift; sourceTree = "<group>"; };
 		AD2505A723258FD400CDDBE7 /* 238.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 238.swift; sourceTree = "<group>"; };
+		AD2505A9232598B400CDDBE7 /* 937.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 937.swift; sourceTree = "<group>"; };
 		AD3D4AEE1FDC062F006DD47C /* LeetCodeTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3D4AF11FDC062F006DD47C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AD3D4AF91FDC067E006DD47C /* ProblemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemProtocol.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			children = (
 				AD85FAAE21FE9C7C00129451 /* 925.swift */,
 				AD20928422EC700C00E3C31F /* 929.swift */,
+				AD2505A9232598B400CDDBE7 /* 937.swift */,
 				AD2505A523257C6700CDDBE7 /* 973.swift */,
 			);
 			path = 901_1000;
@@ -601,6 +604,7 @@
 				ADF367DC1FDD8F1700CAC10C /* 455.swift in Sources */,
 				AD3D4B201FDC332B006DD47C /* 58.swift in Sources */,
 				AD13D7AE22F38DD10016B539 /* 289.swift in Sources */,
+				AD2505AA232598B400CDDBE7 /* 937.swift in Sources */,
 				AD9F81A021FD785200D150CB /* 217.swift in Sources */,
 				433FDC9C22DF8F0100A49821 /* 190.swift in Sources */,
 				433FDC9E22DF902400A49821 /* 198.swift in Sources */,
