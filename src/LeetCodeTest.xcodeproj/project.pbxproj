@@ -31,6 +31,7 @@
 		AD2505A823258FD400CDDBE7 /* 238.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505A723258FD400CDDBE7 /* 238.swift */; };
 		AD2505AA232598B400CDDBE7 /* 937.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505A9232598B400CDDBE7 /* 937.swift */; };
 		AD2505AC2325BF3100CDDBE7 /* 175.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505AB2325BF3100CDDBE7 /* 175.swift */; };
+		AD2505AE2325C25200CDDBE7 /* 33.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2505AD2325C25200CDDBE7 /* 33.swift */; };
 		AD3D4AF21FDC062F006DD47C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF11FDC062F006DD47C /* main.swift */; };
 		AD3D4AFA1FDC067E006DD47C /* ProblemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AF91FDC067E006DD47C /* ProblemProtocol.swift */; };
 		AD3D4AFF1FDC06B4006DD47C /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4AFE1FDC06B4006DD47C /* 1.swift */; };
@@ -174,6 +175,7 @@
 		AD2505A723258FD400CDDBE7 /* 238.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 238.swift; sourceTree = "<group>"; };
 		AD2505A9232598B400CDDBE7 /* 937.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 937.swift; sourceTree = "<group>"; };
 		AD2505AB2325BF3100CDDBE7 /* 175.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 175.swift; sourceTree = "<group>"; };
+		AD2505AD2325C25200CDDBE7 /* 33.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 33.swift; sourceTree = "<group>"; };
 		AD3D4AEE1FDC062F006DD47C /* LeetCodeTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3D4AF11FDC062F006DD47C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AD3D4AF91FDC067E006DD47C /* ProblemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemProtocol.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 				AD3D4B151FDC2B7B006DD47C /* 27.swift */,
 				AD3D4B171FDC2C52006DD47C /* 28.swift */,
 				AD930D8422F397BE0083A99B /* 31.swift */,
+				AD2505AD2325C25200CDDBE7 /* 33.swift */,
 				AD3D4B1A1FDC2F1C006DD47C /* 35.swift */,
 				ADC0CDCE1FF8091F0035BB4F /* 36.swift */,
 				AD70F0AE22DA72C100654E08 /* 38.swift */,
@@ -610,6 +613,7 @@
 				AD13D7AE22F38DD10016B539 /* 289.swift in Sources */,
 				AD2505AA232598B400CDDBE7 /* 937.swift in Sources */,
 				AD9F81A021FD785200D150CB /* 217.swift in Sources */,
+				AD2505AE2325C25200CDDBE7 /* 33.swift in Sources */,
 				433FDC9C22DF8F0100A49821 /* 190.swift in Sources */,
 				433FDC9E22DF902400A49821 /* 198.swift in Sources */,
 				AD20928D22EC7E1800E3C31F /* 415.swift in Sources */,
