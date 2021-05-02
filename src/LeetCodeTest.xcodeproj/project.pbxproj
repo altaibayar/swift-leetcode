@@ -116,6 +116,7 @@
 		ADC17F28263EE69200A1E5CB /* LinkedListLRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC17F27263EE69200A1E5CB /* LinkedListLRU.swift */; };
 		ADC17F2B263EF37D00A1E5CB /* 1114.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC17F2A263EF37D00A1E5CB /* 1114.swift */; };
 		ADC17F2D263EF3BD00A1E5CB /* 338.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC17F2C263EF3BD00A1E5CB /* 338.swift */; };
+		ADC17F30263EFC7800A1E5CB /* 811.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC17F2F263EFC7800A1E5CB /* 811.swift */; };
 		ADC482C91FE03FD700A8F934 /* 687.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC482C81FE03FD700A8F934 /* 687.swift */; };
 		ADC5C6CC21F981FE00ADAD61 /* 155.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5C6CB21F981FE00ADAD61 /* 155.swift */; };
 		ADC5C6CE21F985CC00ADAD61 /* 118.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5C6CD21F985CC00ADAD61 /* 118.swift */; };
@@ -265,6 +266,7 @@
 		ADC17F27263EE69200A1E5CB /* LinkedListLRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListLRU.swift; sourceTree = "<group>"; };
 		ADC17F2A263EF37D00A1E5CB /* 1114.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1114.swift; sourceTree = "<group>"; };
 		ADC17F2C263EF3BD00A1E5CB /* 338.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 338.swift; sourceTree = "<group>"; };
+		ADC17F2F263EFC7800A1E5CB /* 811.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 811.swift; sourceTree = "<group>"; };
 		ADC482C81FE03FD700A8F934 /* 687.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 687.swift; sourceTree = "<group>"; };
 		ADC5C6CB21F981FE00ADAD61 /* 155.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 155.swift; sourceTree = "<group>"; };
 		ADC5C6CD21F985CC00ADAD61 /* 118.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 118.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				ADF367FD1FDDD11200CAC10C /* 501_600 */,
 				ADC482C71FE03FBD00A8F934 /* 601_700 */,
 				ADF367FA1FDDCFED00CAC10C /* 701_800 */,
+				ADC17F2E263EFC6500A1E5CB /* 801_900 */,
 				AD85FAAD21FE9C6600129451 /* 901_1000 */,
 				ADC17F29263EF33100A1E5CB /* 1100_1200 */,
 			);
@@ -385,6 +388,14 @@
 				ADC17F2A263EF37D00A1E5CB /* 1114.swift */,
 			);
 			path = 1100_1200;
+			sourceTree = "<group>";
+		};
+		ADC17F2E263EFC6500A1E5CB /* 801_900 */ = {
+			isa = PBXGroup;
+			children = (
+				ADC17F2F263EFC7800A1E5CB /* 811.swift */,
+			);
+			path = 801_900;
 			sourceTree = "<group>";
 		};
 		ADC482C71FE03FBD00A8F934 /* 601_700 */ = {
@@ -738,6 +749,7 @@
 				AD3D4B411FDC7DB6006DD47C /* 167.swift in Sources */,
 				AD9F819E21FD6C5900D150CB /* 119.swift in Sources */,
 				ADC482C91FE03FD700A8F934 /* 687.swift in Sources */,
+				ADC17F30263EFC7800A1E5CB /* 811.swift in Sources */,
 				AD6AAF261FF90F2200313D88 /* 19.swift in Sources */,
 				ADF367E61FDD9A3E00CAC10C /* 100.swift in Sources */,
 				ADF367E81FDD9A5D00CAC10C /* TreeNode.swift in Sources */,
