@@ -9,6 +9,14 @@
 import Foundation
 
 class Problem_237: ProblemProtocol {
+    func deleteNode(_ node: ListNode?) {
+        guard let node = node, let next = node.next else { return }
+        
+        node.val = next.val
+        node.next = next.next
+    }
+    
+    
     func run() {
 
         /* Java
