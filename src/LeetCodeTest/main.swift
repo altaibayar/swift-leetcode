@@ -8,4 +8,4 @@
 
 import Foundation
 
-Problem_237().run();
+Problem_1071().run();

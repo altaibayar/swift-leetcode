@@ -65,7 +65,7 @@ class Problem_388: ProblemProtocol {
     }
 }
 
-extension String {
+fileprivate extension String {
     func substring(from: Int) -> Substring {
         let startIndex = self.index(self.startIndex, offsetBy: from)
         return self[startIndex ..< self.endIndex]
