@@ -12,6 +12,7 @@
 		006075142C18D769005BB5E4 /* 1071.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006075132C18D769005BB5E4 /* 1071.swift */; };
 		006075172C18DB71005BB5E4 /* 1431.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006075162C18DB71005BB5E4 /* 1431.swift */; };
 		006075192C18DDF0005BB5E4 /* 605.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006075182C18DDF0005BB5E4 /* 605.swift */; };
+		0060751B2C18E1DE005BB5E4 /* 345.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060751A2C18E1DE005BB5E4 /* 345.swift */; };
 		433FDC9C22DF8F0100A49821 /* 190.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDC9B22DF8F0100A49821 /* 190.swift */; };
 		433FDC9E22DF902400A49821 /* 198.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDC9D22DF902400A49821 /* 198.swift */; };
 		433FDCA022DF959800A49821 /* 237.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FDC9F22DF959800A49821 /* 237.swift */; };
@@ -172,6 +173,7 @@
 		006075132C18D769005BB5E4 /* 1071.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1071.swift; sourceTree = "<group>"; };
 		006075162C18DB71005BB5E4 /* 1431.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1431.swift; sourceTree = "<group>"; };
 		006075182C18DDF0005BB5E4 /* 605.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 605.swift; sourceTree = "<group>"; };
+		0060751A2C18E1DE005BB5E4 /* 345.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 345.swift; sourceTree = "<group>"; };
 		433FDC9B22DF8F0100A49821 /* 190.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 190.swift; sourceTree = "<group>"; };
 		433FDC9D22DF902400A49821 /* 198.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 198.swift; sourceTree = "<group>"; };
 		433FDC9F22DF959800A49821 /* 237.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 237.swift; sourceTree = "<group>"; };
@@ -595,6 +597,7 @@
 				ADCC3AA722150B8800CFFFE1 /* 380.swift */,
 				433FDCA522DF9A8700A49821 /* 387.swift */,
 				ADDAD20026402C00001F3B8F /* 388.swift */,
+				0060751A2C18E1DE005BB5E4 /* 345.swift */,
 			);
 			path = 301_400;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				AD85FA9D21FE638F00129451 /* 189.swift in Sources */,
 				ADF367E21FDD93CA00CAC10C /* 268.swift in Sources */,
 				AD3D4B231FDC3472006DD47C /* 66.swift in Sources */,
+				0060751B2C18E1DE005BB5E4 /* 345.swift in Sources */,
 				ADF367D61FDD721200CAC10C /* 496.swift in Sources */,
 				AD70F0AF22DA72C100654E08 /* 38.swift in Sources */,
 				ADF367EA1FDD9D0C00CAC10C /* 101.swift in Sources */,
@@ -899,7 +903,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -952,7 +956,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
