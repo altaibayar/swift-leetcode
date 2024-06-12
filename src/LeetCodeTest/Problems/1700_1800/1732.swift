@@ -2,7 +2,7 @@
 //  1732.swift
 //  LeetCodeTest
 //
-//  Created by a on 12/06/2024.
+//  Cre2ated by a on 12/06/2024.
 //  Copyright © 2024 tsevealt. All rights reserved.
 //
 
