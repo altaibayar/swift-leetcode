@@ -9,6 +9,7 @@
 import Foundation
 
 class Problem_62: ProblemProtocol {
+
     func run() {
         print(uniquePaths(4, 3))
     }
