@@ -10,38 +10,57 @@ import Foundation
 
 class Problem_5: ProblemProtocol {
     func longestPalindrome(_ s: String) -> String {
-
-        var start = 0, end = 0
-
-        for i in 0 ..< s.count {
-            let len1 = mirror(in: s, left: i, right: i + 1)
-            let len2 = mirror(in: s, left: i, right: i)
-            let len = max(len1, len2)
-
-            if len > end - start {
-                start = i - ((len - 1) / 2)
-                end = i + (len / 2)
+        guard !s.isEmpty, s.count > 1 else { return s }
+        
+        var str = "#"
+        for ch in s {
+            str.append(ch)
+            str.append("#")
+        }
+        
+        let n = str.count
+        var P = [Int](repeating: 0, count: n)
+        var center = 0
+        var radius = 0
+        
+        for i in 0 ..< n {
+            let mirror = 2 * center - i
+            
+            if i < radius {
+                P[i] = min(radius - i, P[mirror])
+            }
+            
+            while
+                i + 1 + P[i] < n &&
+                i - 1 - P[i] >= 0 &&
+                str[i + 1 + P[i]] == str[i - 1 - P[i]]
+            {
+                P[i] += 1
+            }
+            
+            if i + P[i] > radius {
+                center = i
+                radius = i + P[i]
             }
         }
-
-        let idx1 = s.index(s.startIndex, offsetBy: start)
-        let idx2 = s.index(s.startIndex, offsetBy: end)
-
-        return String(s[idx1 ... idx2])
-    }
-
-    func mirror(in string: String, left: Int, right: Int) -> Int {
-        var left = left, right = right
-
-        while left >= 0, right < string.count, string[left] == string[right] {
-            left -= 1
-            right += 1
+        
+        var maxLength = 0
+        var centerIndex = 0
+        for i in 0 ..< n {
+            if P[i] > maxLength {
+                maxLength = P[i]
+                centerIndex = i
+            }
         }
-
-        return right - left - 1
+        
+        let startIndex = (centerIndex - maxLength) / 2
+        let range =
+        s.index(s.startIndex, offsetBy: startIndex) ..< s.index(s.startIndex, offsetBy: startIndex + maxLength)
+        return String(s[range])
     }
 
     func run() {
+        print(longestPalindrome("a"));
         print(longestPalindrome("babad"));
         print(longestPalindrome("cbbd"));
 
@@ -52,9 +71,7 @@ class Problem_5: ProblemProtocol {
 }
 
 fileprivate extension String {
-
-    subscript(i: Int) -> Character {
-        let idx = self.index(self.startIndex, offsetBy: i)
-        return self[idx]
+    subscript (i: Int) -> Character {
+        self[self.index(self.startIndex, offsetBy: i)]
     }
 }
