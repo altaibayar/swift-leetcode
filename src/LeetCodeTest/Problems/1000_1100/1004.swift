@@ -8,40 +8,28 @@
 
 class Problem_1004: ProblemProtocol {
     func longestOnes(_ nums: [Int], _ k: Int) -> Int {
-        var result = 0
-        
+        var k = k
+
         var i = 0
         var j = 0
         
-        var tmpK = 0
-        while j < nums.count && tmpK < k{
-            if nums[j] == 0 {
-                tmpK += 1
-                if tmpK == k { break }
-            }
-            
-            j += 1
-        }
-        
-        if result < j - i + 1 {
-            result = j - i + 1
-        }
-        
         while j < nums.count {
-            // move left
-            i += 1
-            while i < nums.count && nums[i] == 1 { i += 1 }
-            
-            // move right
-            j += 1
-            while j < nums.count && nums[j] == 1 { j += 1}
-            
-            if result < j - i + 1 {
-                result = j - i + 1
+            if nums[j] == 0 {
+                k -= 1
             }
+
+            if k < 0 {
+                if nums[i] == 0 {
+                    k += 1
+                }
+
+                i += 1
+            }
+
+            j += 1
         }
 
-        return result
+        return j - i
     }
     
     func run() {
