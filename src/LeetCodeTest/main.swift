@@ -8,5 +8,5 @@
 
 import Foundation
 
-Problem_5().run();
+Problem_1004().run();
 
