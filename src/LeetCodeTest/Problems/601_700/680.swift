@@ -23,7 +23,7 @@ class Problem_680: ProblemProtocol {
     }
     
     func validPalindrome(_ s: String) -> Bool {
-        var chars: [Character] = Array(s)
+        let chars: [Character] = Array(s)
         
         var i = 0
         var j = s.count - 1

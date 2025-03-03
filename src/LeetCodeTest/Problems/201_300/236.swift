@@ -2,62 +2,60 @@
 //  236.swift
 //  LeetCodeTest
 //
-//  Created by altaibayar tseveenbayar on 09/12/2017.
-//  Copyright © 2017 tsevealt. All rights reserved.
+//  Created by a on 03/03/2025.
+//  Copyright © 2025 tsevealt. All rights reserved.
 //
-
-import Foundation
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public var val: Int
+ *     public var left: TreeNode?
+ *     public var right: TreeNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.left = nil
+ *         self.right = nil
+ *     }
+ * }
+ */
 
 class Problem_236: ProblemProtocol {
+    
+    var result: TreeNode? = nil
+
+    func recurse(_ current: TreeNode?, _ p: TreeNode, _ q: TreeNode) -> Bool {
+        guard let current = current else { return false }
+        
+        let left = recurse(current.left, p, q) ? 1 : 0
+        let right = recurse(current.right, p, q) ? 1 : 0
+        let mid = p.val == current.val || q.val == current.val ? 1 : 0
+        
+        if left + right + mid >= 2 {
+            result = current
+        }
+                
+        return left + right + mid > 0;
+    }
+    
+    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        let _ = recurse(root, p!, q!)
+        return result
+    }
+    
     func run() {
-        print(isPalindrome(ListNode.create([1])));
-        print(isPalindrome(ListNode.create([1, 2, 2, 1])));
-        print(isPalindrome(ListNode.create([1, 2, 3, 2, 1])));
-        print(isPalindrome(ListNode.create([1, 2, 3, 4, 2, 1])));
-    }
+        print(lowestCommonAncestor(
+            TreeNode.create([3,5,1,6,2,0,8,nil,nil,7,4]),
+            TreeNode(5),
+            TreeNode(1))?.val ?? "nil") // 3
+        
+        print(lowestCommonAncestor(
+            TreeNode.create([3,5,1,6,2,0,8,nil,nil,7,4]),
+            TreeNode(5),
+            TreeNode(4))?.val ?? "nil") // 5
 
-    func isPalindrome(_ head: ListNode?) -> Bool {
-        if head == nil { return true; }
-
-        var fast: ListNode? = head, slow: ListNode? = head;
-        while fast != nil && fast?.next != nil {
-            fast = fast?.next?.next;
-            slow = slow?.next;
-        }
-
-        if fast != nil {
-            slow = slow?.next;
-        }
-
-        slow = reverseList(slow);
-        fast = head;
-
-        while slow != nil {
-            if slow?.val != fast?.val {
-                return false;
-            }
-
-            slow = slow?.next;
-            fast = fast?.next;
-        }
-
-        return true;
-    }
-
-    func reverseList(_ head: ListNode?) -> ListNode? {
-        if head == nil { return nil; }
-
-        var root: ListNode? = nil;
-        var current = head;
-        while current != nil {
-            let next = current?.next;
-
-            current?.next = root;
-            root = current;
-
-            current = next;
-        }
-
-        return root;
+        print(lowestCommonAncestor(
+            TreeNode.create([1,2]),
+            TreeNode(1),
+            TreeNode(2))?.val ?? "nil") // 1
     }
 }
