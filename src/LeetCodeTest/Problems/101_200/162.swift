@@ -23,6 +23,7 @@ class Problem_162: ProblemProtocol {
     }
     
     func run() {
+        print(findPeakElement([2, 3, 4, 5, 1]))
         print(findPeakElement([1])) // 0
         print(findPeakElement([1,2,3,1])) // 2
         print(findPeakElement([1,2,1,3,5,6,4])) // 5
