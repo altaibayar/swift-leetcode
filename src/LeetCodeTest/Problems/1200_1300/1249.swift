@@ -7,9 +7,6 @@
 //
 
 class Problem_1249: ProblemProtocol {
-    
-    
-    
     func minRemoveToMakeValid(_ s: String) -> String {
         var openCount = 0
         var arr: [Character] = s.map { $0 }
