@@ -8,7 +8,20 @@
 
 class Problem_1762: ProblemProtocol {
     func findBuildings(_ heights: [Int]) -> [Int] {
-        []
+        guard !heights.isEmpty else { return [] }
+        guard heights.count > 1 else { return [0] }
+        
+        var currentMax = Int.min
+        
+        var result = [Int]()
+        for i in stride(from: heights.count - 1, through: 0, by: -1) {
+            if heights[i] > currentMax {
+                result.append(i)
+                currentMax = heights[i]
+            }
+        }
+        
+        return result.reversed()
     }
         
     func run() {
