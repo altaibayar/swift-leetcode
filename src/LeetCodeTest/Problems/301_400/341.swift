@@ -6,7 +6,7 @@
 //  Copyright © 2025 tsevealt. All rights reserved.
 //
 
-protocol NestedInteger {
+fileprivate protocol NestedInteger {
     // Return true if this NestedInteger holds a single integer, rather than a nested list.
     func isInteger() -> Bool
 
@@ -94,9 +94,9 @@ extension Int: NestedInteger {
 
     func setInteger(value: Int) { fatalError() }
 
-    func add(elem: any NestedInteger) { fatalError() }
+    fileprivate func add(elem: any NestedInteger) { fatalError() }
 
-    func getList() -> [any NestedInteger] { fatalError() }
+    fileprivate func getList() -> [any NestedInteger] { fatalError() }
 }
 
 extension Array: NestedInteger where Element == Int {
@@ -106,7 +106,7 @@ extension Array: NestedInteger where Element == Int {
 
     func setInteger(value: Int) { fatalError() }
 
-    func add(elem: any NestedInteger) { fatalError() }
+    fileprivate func add(elem: any NestedInteger) { fatalError() }
 
-    func getList() -> [any NestedInteger] { self }
+    fileprivate func getList() -> [any NestedInteger] { self }
 }
