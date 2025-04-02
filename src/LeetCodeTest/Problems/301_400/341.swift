@@ -30,49 +30,47 @@ class Problem_341: ProblemProtocol {
     fileprivate class NestedIterator {
         let list: [NestedInteger]
 
-        var listStack: [[NestedInteger]]
-        var indexStack: [Int]
-
+        var indexStack = [Int]()
+        var listStack = [[NestedInteger]]()
+        
         init(_ nestedList: [NestedInteger]) {
             self.list = nestedList
-
-            listStack = [nestedList]
+            
             indexStack = [0]
+            listStack = [nestedList]
         }
 
         func next() -> Int {
-            pruneIndexStack()
-            let currentPosition = indexStack.removeFirst()
-
-            indexStack.insert(currentPosition + 1, at: 0)
-            return listStack.first![currentPosition].getInteger()
+            if !hasNext() { fatalError("") }
+            
+            let currentPos = indexStack.popLast()!
+            indexStack.append(currentPos + 1)
+            
+            return listStack.last![currentPos].getInteger()
         }
 
         func hasNext() -> Bool {
-            pruneIndexStack()
+            makeIntegerFirst()
+            
             return !indexStack.isEmpty
         }
-
-        private func pruneIndexStack() {
-            while let firstIndex = indexStack.first {
-
-                if firstIndex >= listStack.first!.count {
-                    indexStack.removeFirst()
-                    listStack.removeFirst()
+        
+        func makeIntegerFirst() {
+            while let lastIndex = indexStack.last {
+                
+                if lastIndex >= listStack.last!.count {
+                    indexStack.removeLast()
+                    listStack.removeLast()
                     continue
                 }
-
-                if listStack.first![firstIndex].isInteger() {
+                
+                if listStack.last![lastIndex].isInteger() {
                     break
                 }
-
-                listStack.insert(
-                    listStack.first![firstIndex].getList(),
-                    at: 0
-                )
                 
-                indexStack.insert(indexStack.removeFirst() + 1, at: 0)
-                indexStack.insert(0, at: 0)
+                listStack.append(listStack.last![lastIndex].getList())
+                indexStack.append(indexStack.popLast()! + 1)
+                indexStack.append(0)
             }
         }
     }
