@@ -14,7 +14,49 @@ class Problem_1298: ProblemProtocol {
         _ containedBoxes: [[Int]],
         _ initialBoxes: [Int]
     ) -> Int {
-        0
+        var canOpen = status.map { $0 == 1 }
+        var hasBox = [Bool](repeating: false, count: status.count)
+        var used = [Bool](repeating: false, count: status.count)
+
+        var result = 0
+
+        var queue = [Int]()
+        for box in initialBoxes {
+            hasBox[box] = true
+            if canOpen[box] {
+                queue.append(box)
+                used[box] = true
+                result += candies[box]
+            }
+        }
+
+        while !queue.isEmpty {
+            let box = queue.removeFirst()
+
+            for key in keys[box] {
+                canOpen[key] = true
+
+                if !used[key] && hasBox[key] {
+                    queue.append(key)
+                    used[key] = true
+                    result += candies[key]
+                }
+            }
+            
+            for contained in containedBoxes[box] {
+                hasBox[contained] = true
+                
+                if !used[contained] && canOpen[contained] {
+                    queue.append(contained)
+                    used[contained] = true
+                    
+                    result += candies[contained]
+                }
+            }
+            
+        }
+
+        return result
     }
 
     func run() {
