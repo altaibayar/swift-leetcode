@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -437,6 +437,10 @@
 		ADF367FE1FDDD12400CAC10C /* 530.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 530.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		009305D62FF66BE4005E8474 /* 2101-2199 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "2101-2199"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		AD3D4AEB1FDC062F006DD47C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -589,6 +593,7 @@
 				0060750F2C18CE50005BB5E4 /* 1700_1800 */,
 				00CC7B5A2C1A3D2D003BFFDA /* 1900_2000 */,
 				00CC7B4F2C1A2C74003BFFDA /* 2000_2100 */,
+				009305D62FF66BE4005E8474 /* 2101-2199 */,
 				00CC7B422C1A2616003BFFDA /* 2200_2300 */,
 				00CC7B482C1A283F003BFFDA /* 2300_2400 */,
 				00574DC32FDAA9B000E820A7 /* 3001_3100 */,
@@ -891,6 +896,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				009305D62FF66BE4005E8474 /* 2101-2199 */,
 			);
 			name = LeetCodeTest;
 			productName = LeetCodeTest;
@@ -1255,7 +1263,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
